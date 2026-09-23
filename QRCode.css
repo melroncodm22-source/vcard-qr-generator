@@ -77,3 +77,24 @@ button:hover {
   max-height: 160px;
   overflow-y: auto;
 }
+
+/* Styles below this line only apply when the screen is 480px wide or less
+   (phones in portrait mode). This is called a "media query" — a way to
+   write different CSS rules depending on screen size. */
+@media (max-width: 480px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .card {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 19px;
+  }
+
+  input, button {
+    font-size: 16px; /* 16px prevents iPhones from auto-zooming in on tap */
+  }
+}
